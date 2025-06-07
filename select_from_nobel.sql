@@ -76,3 +76,6 @@ WHERE winner LIKE 'Sir%'
 ORDER BY yr DESC, winner ASC;
 
 // 14
+SELECT winner, subject FROM nobel
+WHERE yr = 1984
+ORDER BY FIELD(subject, 'chemistry', 'physics'), subject, winner
